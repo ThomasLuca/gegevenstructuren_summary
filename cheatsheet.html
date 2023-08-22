@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-08-22 Tue 21:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Summary</title>
+<meta name="author" content="DUDOS" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Summary</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgbd77570">1. Efficiency of Algorithms</a>
+<ul>
+<li><a href="#org6d1e818">1.1. Big O</a></li>
+<li><a href="#orgbb75a9d">1.2. Different Criteria</a></li>
+</ul>
+</li>
+<li><a href="#orged9411c">2. Containers</a>
+<ul>
+<li><a href="#org3383bc7">2.1. Array (tabel)</a></li>
+<li><a href="#org9651c6e">2.2. Linked List</a></li>
+<li><a href="#org64a1188">2.3. Stack</a></li>
+<li><a href="#orgaa282c2">2.4. Queue</a></li>
+<li><a href="#org95981d3">2.5. Deque</a></li>
+<li><a href="#orgf3a380d">2.6. Tree</a>
+<ul>
+<li><a href="#org0114ee5">2.6.1. Traversal</a></li>
+</ul>
+</li>
+<li><a href="#org6fbc2ca">2.7. Graph</a>
+<ul>
+<li><a href="#orgaeb5a53">2.7.1. Storing a graph</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5d9dc7c">3. Priority Queues</a>
+<ul>
+<li><a href="#org59b0b93">3.1. (binary)Heap</a></li>
+<li><a href="#org97f022e">3.2. Binomial queues</a></li>
+<li><a href="#orga9b1bae">3.3. Pairing heap</a></li>
+</ul>
+</li>
+<li><a href="#org00fc618">4. Basic dictionaries</a>
+<ul>
+<li><a href="#org8b267f2">4.1. Dictionary</a>
+<ul>
+<li><a href="#orga4bb5db">4.1.1. Directly addressable array (eg freq table)</a></li>
+<li><a href="#orgbcc5802">4.1.2. Unordered array</a></li>
+<li><a href="#orga318d4c">4.1.3. Ordered array</a></li>
+<li><a href="#org741cb4e">4.1.4. List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb4842c5">5. Hash tables</a>
+<ul>
+<li><a href="#org9b3486f">5.1. Collisions</a>
+<ul>
+<li><a href="#org2e7c38e">5.1.1. Chaining</a></li>
+<li><a href="#org4c17dd2">5.1.2. Open addressing</a></li>
+</ul>
+</li>
+<li><a href="#org40eb559">5.2. Hash functions</a>
+<ul>
+<li><a href="#orga752140">5.2.1. Fixed hashfunction</a></li>
+<li><a href="#orgbf1e550">5.2.2. Universal hashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org285c923">6. Binary search trees</a>
+<ul>
+<li><a href="#org44d85bc">6.1. BST</a>
+<ul>
+<li><a href="#orgd1d6aab">6.1.1. Retreiving element</a></li>
+<li><a href="#org9ab6609">6.1.2. Retreiving min or max value</a></li>
+<li><a href="#org5aa277a">6.1.3. Retreiving successor:</a></li>
+<li><a href="#org2bbeba5">6.1.4. Adding value</a></li>
+<li><a href="#orgbe4022e">6.1.5. Deleting value</a></li>
+<li><a href="#orga6e46f2">6.1.6. Height of tree</a></li>
+</ul>
+</li>
+<li><a href="#orge706d24">6.2. Threaded tree</a></li>
+<li><a href="#org4b3e305">6.3. Randomized search tree</a>
+<ul>
+<li><a href="#org4d4016a">6.3.1. Treap (tree + heap)</a></li>
+</ul>
+</li>
+<li><a href="#org2479cae">6.4. Hash table vs Binary tree</a></li>
+</ul>
+</li>
+<li><a href="#org77e0c08">7. External data structures</a>
+<ul>
+<li><a href="#org915405c">7.1. \(B\) -trees</a>
+<ul>
+<li><a href="#org89657b2">7.1.1. Find</a></li>
+<li><a href="#orgf3164ef">7.1.2. Add</a></li>
+<li><a href="#org1fe812c">7.1.3. Remove</a></li>
+</ul>
+</li>
+<li><a href="#orgee1aa55">7.2. \(B^+\) -tree</a></li>
+<li><a href="#org95ed07b">7.3. External hashing</a>
+<ul>
+<li><a href="#org749e7db">7.3.1. Binary trie</a></li>
+<li><a href="#org792de03">7.3.2. Extendible hashing</a></li>
+<li><a href="#org263fbff">7.3.3. Linear hashing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd77570" class="outline-2">
+<h2 id="orgbd77570"><span class="section-number-2">1.</span> Efficiency of Algorithms</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Theoretical analysis of the required number of primitive operations as a function of the input size
+</p>
+<ul class="org-ul">
+<li>Best case: Ω(n)</li>
+<li>Average case: Θ(n)</li>
+<li>Worst case: O(n)</li>
+</ul>
+</div>
+
+<div id="outline-container-org6d1e818" class="outline-3">
+<h3 id="org6d1e818"><span class="section-number-3">1.1.</span> Big O</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b>Big O</b>: Express the complexity of an algorithm as function of the input size. (Not an exact number)
+</p>
+
+<p>
+Common functions:
+</p>
+<ul class="org-ul">
+<li>Constant: O(1) : constant time, regardless of the input size</li>
+<li>Logarithmic: O(log n) : we typically use O(lg n) to indicate the logarithm with base 2</li>
+<li>Linear: O(n)</li>
+<li>LogLinear: O(n log n)</li>
+<li>Quadratic: O(n²)</li>
+<li>Exponential: O(c<sup>n</sup>)</li>
+<li>Factorial: O(n!)</li>
+</ul>
+
+
+<div id="orgf32ee03" class="figure">
+<p><img src="./img/BigO.png" alt="BigO.png" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Table of growth functions</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbb75a9d" class="outline-3">
+<h3 id="orgbb75a9d"><span class="section-number-3">1.2.</span> Different Criteria</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Cost of implementation (no use spending a lot of time implenting an efficient solution for a single run program)</li>
+<li>Benadering (worst case could be way to pessimistic)</li>
+<li>Memory efficiency could be more important</li>
+<li>Computer hierarchy</li>
+<li>Parallellism</li>
+<li>Operations on memory</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orged9411c" class="outline-2">
+<h2 id="orged9411c"><span class="section-number-2">2.</span> Containers</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Datastructure that doens&rsquo;t make use of <i>keys</i>. The elements are either located using a sequence or they are stored on a specific place.
+</p>
+</div>
+
+<div id="outline-container-org3383bc7" class="outline-3">
+<h3 id="org3383bc7"><span class="section-number-3">2.1.</span> Array (tabel)</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Stores data by explicitly assigning a slot to place the data in.</li>
+<li>Continous area in memory</li>
+<li>Fixed size</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add (amortized)</td>
+<td class="org-left">O(1)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The total cost of adding n elements:
+\[\sum\limits_{i=1}^{n}{t_i} = n + \sum\limits_{j=0}^{\lceil\ln n\rceil - 1}{2^j} < n + 2n = 3n \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9651c6e" class="outline-3">
+<h3 id="org9651c6e"><span class="section-number-3">2.2.</span> Linked List</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Chain of nodes. Each node stores some data and a pointer to the next node.
+</p>
+<ul class="org-ul">
+<li>Overhead of pointer in each node</li>
+<li>Data not stored in contiguous region in memory</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add</td>
+<td class="org-left">O(1)</td>
+</tr>
+
+<tr>
+<td class="org-left">Remove</td>
+<td class="org-left">O(1)</td>
+</tr>
+
+<tr>
+<td class="org-left">Find</td>
+<td class="org-left">O(n)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org64a1188" class="outline-3">
+<h3 id="org64a1188"><span class="section-number-3">2.3.</span> Stack</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li><b>LIFO</b></li>
+<li>Support
+<ul class="org-ul">
+<li>Push</li>
+<li>Pop</li>
+<li>Check (if empty)</li>
+<li>opt: peek, dupe, swap</li>
+</ul></li>
+<li>Implement w/ array or ll</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Push</td>
+<td class="org-left">O(1)</td>
+</tr>
+
+<tr>
+<td class="org-left">Pop</td>
+<td class="org-left">O(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgaa282c2" class="outline-3">
+<h3 id="orgaa282c2"><span class="section-number-3">2.4.</span> Queue</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li><b>FIFO</b></li>
+<li>Support
+<ul class="org-ul">
+<li>Add</li>
+<li>Remove</li>
+<li>Check</li>
+</ul></li>
+<li><p>
+Circular array (2 pointers + modulo calc)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add</td>
+<td class="org-left">O(1)</td>
+</tr>
+
+<tr>
+<td class="org-left">Remove</td>
+<td class="org-left">O(1)</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95981d3" class="outline-3">
+<h3 id="org95981d3"><span class="section-number-3">2.5.</span> Deque</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>Double ended queue. Can be used as stack and queue.</li>
+<li>Add/ remove supported on both sides.</li>
+<li>Implement w/ array/ double linked-list</li>
+<li><p>
+Add and remove are O(1)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add</td>
+<td class="org-left">O(1)</td>
+</tr>
+
+<tr>
+<td class="org-left">Remove</td>
+<td class="org-left">O(1)</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf3a380d" class="outline-3">
+<h3 id="orgf3a380d"><span class="section-number-3">2.6.</span> Tree</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Collection of nodes that store the data, connected with edges (no edges).
+</p>
+<ul class="org-ul">
+<li><b>Degree</b>: number of children</li>
+<li><b>Ordered tree</b>:  order of children matter</li>
+<li><b>Multiway tree</b>: children have fixed index (can use array/ll of pointers to point to children)</li>
+<li><b>Binary tree</b>: Node stores just two pointers (max 2 children)</li>
+</ul>
+</div>
+
+<div id="outline-container-org0114ee5" class="outline-4">
+<h4 id="org0114ee5"><span class="section-number-4">2.6.1.</span> Traversal</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<ul class="org-ul">
+<li><b>Depth first</b> (DEZ): go all the way down before processing the next sibling
+<ol class="org-ol">
+<li><i>preorder</i>: First root, then left subtree, then right subtree</li>
+<li><i>inorder</i>: First left subtree, then root, then right subtree</li>
+<li><i>postorder</i>: First left subtree, then right subtree, then root</li>
+</ol></li>
+<li><b>Breath-first</b> (BEZ): visit every node on a level before going to a lower level</li>
+<li><b>Best first</b>: Children have different priority&rsquo;s</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6fbc2ca" class="outline-3">
+<h3 id="org6fbc2ca"><span class="section-number-3">2.7.</span> Graph</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Collection of n nodes connected with m edges. The edges might have a weight (neural networks)
+</p>
+</div>
+<div id="outline-container-orgaeb5a53" class="outline-4">
+<h4 id="orgaeb5a53"><span class="section-number-4">2.7.1.</span> Storing a graph</h4>
+<div class="outline-text-4" id="text-2-7-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgf0c988c"></a>Adjecency matrix<br />
+<div class="outline-text-5" id="text-2-7-1-1">
+<ul class="org-ul">
+<li>NxM matrix, each element indicates weight or presence of a connection between nodes.</li>
+<li>Efficient to retreive weight between nodes</li>
+<li>Not efficient to store</li>
+<li>Undirected graph: only store triangular matrix</li>
+</ul>
+</div>
+</li>
+<li><a id="org6c8b545"></a>Adjecency lists<br />
+<div class="outline-text-5" id="text-2-7-1-2">
+<ul class="org-ul">
+<li>Matrix representation is not efficient for sparse graphs</li>
+<li>Store for each node a list with an identification of the neighbor</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d9dc7c" class="outline-2">
+<h2 id="org5d9dc7c"><span class="section-number-2">3.</span> Priority Queues</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Every element in container has a priority (high priority == small number).
+Supports:
+</p>
+<ul class="org-ul">
+<li>Add()</li>
+<li>Remove(), returns element with highest priority</li>
+<li>isEmpty()</li>
+<li>Peek(), return highest priority without removing it.</li>
+</ul>
+
+<p>
+Trivial implementations:
+</p>
+<ul class="org-ul">
+<li>Ordered array: Add = O(n), Retrieve = O(1)</li>
+<li>Unordered array: Add = O(1), Retrieve = O(n)</li>
+</ul>
+</div>
+
+<div id="outline-container-org59b0b93" class="outline-3">
+<h3 id="org59b0b93"><span class="section-number-3">3.1.</span> (binary)Heap</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Complete binary tree where all elements follow the heap property. (height = log n)
+</p>
+<ul class="org-ul">
+<li><b>Complete binary tree</b>: all levels filled completely (except last, which is filled as left as possible).</li>
+<li><b>Heap properies</b>
+<ul class="org-ul">
+<li>Max heap: Value of parent is larger than children</li>
+<li>Min heap: Value of parent is lower than children</li>
+</ul></li>
+</ul>
+
+<p>
+Heap operations:
+</p>
+<ol class="org-ol">
+<li><b>Adding to heap</b>
+<ol class="org-ol">
+<li>Insert element at index n+1 (leaf)</li>
+<li>Restore heap property by moving element up as long as priority isn&rsquo;t correct (Worst case O(lg n))</li>
+</ol></li>
+<li><b>Removing root</b>
+<ol class="org-ol">
+<li>Put last element at place of root</li>
+<li>Restore heap property by switching with children until restored (Worst case O(lg n))</li>
+</ol></li>
+<li><b>Build heap by adding</b>
+Add elements one by one to an initialy empty heap. This requires n-1 operations, each operation might require moving the root. (worst case O(n lg n))</li>
+<li><b>Build heap by merging smaller heaps</b>
+Two smaller heaps and an temporary root can be merged into a new singular heap. To accomplish this, the root has to rotated with the root of its subheap with largest child to restore heap propery (worst case O(n)).</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add</td>
+<td class="org-left">O(lg n)</td>
+</tr>
+
+<tr>
+<td class="org-left">Remove (root)</td>
+<td class="org-left">O(lg n)</td>
+</tr>
+
+<tr>
+<td class="org-left">Build (Add)</td>
+<td class="org-left">O(n lg n)</td>
+</tr>
+
+<tr>
+<td class="org-left">Build (Merge)</td>
+<td class="org-left">O(n)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org97f022e" class="outline-3">
+<h3 id="org97f022e"><span class="section-number-3">3.2.</span> Binomial queues</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Binomial queue is a set of binomial trees.
+A binomial tree \(B_h\) is defined by its height h:
+</p>
+<ul class="org-ul">
+<li>There is only a single binomial tree with this height</li>
+<li>A single node is a binomial tree with height 0</li>
+<li>\(B_h\) consists of two \(B_{h-1}\) trees where one is the leftmost child of the other</li>
+</ul>
+<p>
+Each binomial tree follows heap property.
+Name binomial: n=13 :(bin)1101: \(B_3 + B_2 + B_1\)
+</p>
+
+
+<div id="orgb0e4b9d" class="figure">
+<p><img src="./img/binomial-queue.png" alt="binomial-queue.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Image of binomial queue</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga9b1bae" class="outline-3">
+<h3 id="orga9b1bae"><span class="section-number-3">3.3.</span> Pairing heap</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Tree structure that follows heap property but isn&rsquo;t necessarily a complete tree.
+</p>
+
+
+<div id="org4a26f70" class="figure">
+<p><img src="./img/pairing-heap.png" alt="pairing-heap.png" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Image of pairing heap</p>
+</div>
+
+<p>
+Pairing heap merge:
+</p>
+<ul class="org-ul">
+<li>Compare root elements</li>
+<li>Tree with largest root becomes left child of other tree O(1)</li>
+<li>Adding an element is seen as a special case of merging</li>
+</ul>
+
+
+<div id="org73d6505" class="figure">
+<p><img src="./img/pairing-heap-merge.png" alt="pairing-heap-merge.png" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Image of pairing heaps merging</p>
+</div>
+
+<p>
+Removing the root:
+</p>
+<ul class="org-ul">
+<li>Tree becomes multiple subtrees</li>
+<li>Merge subtrees into new tree</li>
+<li>Naive O(n)</li>
+<li>Two-pass O(lg n)
+<ol class="org-ol">
+<li>Merge pairs of trees from left to right</li>
+<li>Merge all trees into one from right to left</li>
+</ol></li>
+</ul>
+
+<p>
+Decreasing priority of element:
+</p>
+<ul class="org-ul">
+<li>Remove subtree (element to decrease is root of subtree)</li>
+<li>Change value</li>
+<li>Merge (O(1))</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Priority queue</th>
+<th scope="col" class="org-left">Merge</th>
+<th scope="col" class="org-left">Add</th>
+<th scope="col" class="org-left">Remove</th>
+<th scope="col" class="org-left">Decrease priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Binomial queue</td>
+<td class="org-left">O(lg n)</td>
+<td class="org-left">O(1)</td>
+<td class="org-left">O(ln n)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Pairing heap</td>
+<td class="org-left">O(1)</td>
+<td class="org-left">O(1)</td>
+<td class="org-left">O(ln n)</td>
+<td class="org-left">O(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org00fc618" class="outline-2">
+<h2 id="org00fc618"><span class="section-number-2">4.</span> Basic dictionaries</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Dictionaries support dictionary operations (find, add, remove) that use the key to localize the data.
+</p>
+</div>
+<div id="outline-container-org8b267f2" class="outline-3">
+<h3 id="org8b267f2"><span class="section-number-3">4.1.</span> Dictionary</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Maps a key to a value
+</p>
+</div>
+
+<div id="outline-container-orga4bb5db" class="outline-4">
+<h4 id="orga4bb5db"><span class="section-number-4">4.1.1.</span> Directly addressable array (eg freq table)</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>Keys convertable to indices (don&rsquo;t store key)</li>
+<li>O(1) performance for all operations</li>
+<li>Dupes? store linked list in stead of value</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbcc5802" class="outline-4">
+<h4 id="orgbcc5802"><span class="section-number-4">4.1.2.</span> Unordered array</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>Search: Linear O(n)</li>
+<li>Add: O(1)</li>
+<li>Remove:
+<ol class="org-ol">
+<li>Find element O(n)</li>
+<li>Move all sequential elements O(n) or replace with last element O(1)</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga318d4c" class="outline-4">
+<h4 id="orga318d4c"><span class="section-number-4">4.1.3.</span> Ordered array</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<ul class="org-ul">
+<li>Search: binary search O(lg n)</li>
+<li>Add: Find location, move alle elems O(n)</li>
+<li>Remove:
+<ol class="org-ol">
+<li>Find elem O(n)</li>
+<li>Move all sequential elems into place O(n)</li>
+</ol></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org741cb4e" class="outline-4">
+<h4 id="org741cb4e"><span class="section-number-4">4.1.4.</span> List</h4>
+<div class="outline-text-4" id="text-4-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgb7e0654"></a>Unordered linked list<br />
+<div class="outline-text-5" id="text-4-1-4-1">
+<ul class="org-ul">
+<li>Search: O(n)</li>
+<li>Add: O(1)</li>
+<li>Remove: O(1)</li>
+</ul>
+</div>
+</li>
+<li><a id="orgef9ac80"></a>Ordered by search frequency<br />
+<div class="outline-text-5" id="text-4-1-4-2">
+<ul class="org-ul">
+<li>Put each accessed element in front or switch it with its predecessor.</li>
+<li>Putting elements in front was not efficient with an array implementation.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc03129f"></a>Ordered list:<br />
+<div class="outline-text-5" id="text-4-1-4-3">
+<ul class="org-ul">
+<li>Not possible to do binary search, only sequential access: O(n)</li>
+<li>Add: search O(n) + insert O(1)</li>
+<li>Remove: search O(n) + remove O(1)</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb4842c5" class="outline-2">
+<h2 id="orgb4842c5"><span class="section-number-2">5.</span> Hash tables</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Another dictionary (find, add, remove) which uses a <b>hash function</b> to translate a key to an index.
+</p>
+
+<p>
+\[ hash = hashfunc(key)\]
+\[index = hash % array_size \]
+</p>
+
+<p>
+Given a key, all dictionary operations are O(1).
+</p>
+</div>
+<div id="outline-container-org9b3486f" class="outline-3">
+<h3 id="org9b3486f"><span class="section-number-3">5.1.</span> Collisions</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+It is very possible that a hash function returns the same index for different keys:
+</p>
+</div>
+<div id="outline-container-org2e7c38e" class="outline-4">
+<h4 id="org2e7c38e"><span class="section-number-4">5.1.1.</span> Chaining</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+Use linked lists to deal with collisions.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgfa1916f"></a>Separate chaining<br />
+<div class="outline-text-5" id="text-5-1-1-1">
+<p>
+Store a linked list at every collision. (Table of linked lists)
+</p>
+<ul class="org-ul">
+<li>Retrieve:
+<ul class="org-ul">
+<li>O(n) worst case (every thing stored on same index)</li>
+<li>number of slots ≈ number of elements -&gt; O(1)</li>
+<li>#slots/#elements = load factor (α)</li>
+</ul></li>
+<li>Add O(1)</li>
+<li>Remove O(1)</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf528afd"></a>Coalesced chaining<br />
+<div class="outline-text-5" id="text-5-1-1-2">
+<p>
+Table of list nodes
+</p>
+<ul class="org-ul">
+<li>New datapoint goes in any available slot and keep a pointer to that slot</li>
+<li>No need to dynamically allocate data</li>
+<li>Sometimes implemented with a separate region for overflowed data</li>
+<li>Retrieve: Calculate hash func and follow pointers if necessary</li>
+<li>Add: Calculate hash func, in case of collision, use free slot</li>
+<li>Remove: (lazy) store a flag to make clear that it&rsquo;s overwritable</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org4c17dd2" class="outline-4">
+<h4 id="org4c17dd2"><span class="section-number-4">5.1.2.</span> Open addressing</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>Like coalesced chaining, insead upon collision, a new hash is calculated
+<ul class="org-ul">
+<li><b>linear probing</b>: keep looking in next slot \[(h(s) + i)\: mod\: m\;\; (for\: i=0,1,...,m-1)\]</li>
+<li><b>Quadratic probing</b>: make bigger jumps over time \[(h(s)+c_1i+c_2i^2)\: mod\: m\;\; (for\: i=0,1,...,m-1)\]</li>
+<li><b>Double hashing</b>: Use 2 different hash functions \[(h(s) + ih'(s))\: mod\: m\;\; (for\: i=0,1,...,m-1)\]</li>
+</ul></li>
+<li>Tradeoff between compute time and storage</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org40eb559" class="outline-3">
+<h3 id="org40eb559"><span class="section-number-3">5.2.</span> Hash functions</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+A good hash function:
+</p>
+<ul class="org-ul">
+<li>Every index has equal chance</li>
+<li>Likeliness that 2 different keys result in same index is i/m (singular uniform hashing)</li>
+</ul>
+</div>
+<div id="outline-container-orga752140" class="outline-4">
+<h4 id="orga752140"><span class="section-number-4">5.2.1.</span> Fixed hashfunction</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+There are 2 kinds of fixed hashfuntion:
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org5fe9e03"></a>Deviding<br />
+<div class="outline-text-5" id="text-5-2-1-1">
+<ul class="org-ul">
+<li>Most common</li>
+<li>\(h(s)= s\: mod\: m\)</li>
+<li>Choise of \(m\) is important
+<ul class="org-ul">
+<li>if \(m\) is even: even keys get even index (bad)</li>
+<li>if \(m=2^i\): index is last i bits of key (bad)</li>
+<li>if \(m=10*i\): bad</li>
+<li>Good: prime numbers -&gt; far away from powers of 2</li>
+</ul></li>
+<li>If the key consists of multiple words it is best practice to use a different hash function for each word:
+\[s=\langle e_1e_2...e_k\rangle\]
+\[h(s)=(h_1(e_1) + h_2(e_2) + ... + h_k(e_k))\; mod\; m \]</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgb883d41"></a>Multiplying<br />
+<div class="outline-text-5" id="text-5-2-1-2">
+<ul class="org-ul">
+<li>Multiply key with constant value \(C (0 < C < 1)\) \[h(s) = \lfloor m(sC - \lfloor sC \rfloor)\rfloor\]</li>
+<li>Value of \(m\) is no longer important, usualy \(m=2^i\)</li>
+<li>Value of \(C\) is important, \(C \approx (\sqrt{5}-1)/2\) yields good results</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgbf1e550" class="outline-4">
+<h4 id="orgbf1e550"><span class="section-number-4">5.2.2.</span> Universal hashing</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<p>
+For every key, use a different (random) hashfunction.
+Creating a family of functions:
+</p>
+<ol class="org-ol">
+<li>Choose a prime  number \(p (\geq k)\)</li>
+<li>Generate \(a \in [1, p-1]\) (random)</li>
+<li>Generate \(b \in [0, p-1]\) (random)
+\[h_{a,b}(s)=((as+b)\;mod\;p)\;mod\;m\]</li>
+<li>This family contains \((p-1)p\) hashfunctions</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org285c923" class="outline-2">
+<h2 id="org285c923"><span class="section-number-2">6.</span> Binary search trees</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+BST is another implementation of a dictionary that takes care of some shortcommings viz. the order of the keys.
+A BST is a binary tree where every node contains a key and a value. Every nodes complies with the following conditions:
+</p>
+<ul class="org-ul">
+<li>keys in left subtree are smaller than or equal as node</li>
+<li>keys in right subtree are bigger than or equal as node.</li>
+</ul>
+<p>
+In order traversal of tree results in sorted keys: <b>Tree sort</b>
+</p>
+
+
+<div id="org5cffcbe" class="figure">
+<p><img src="./img/BST.png" alt="BST.png" />
+</p>
+<p><span class="figure-number">Figure 5: </span>Image of binary search tree</p>
+</div>
+</div>
+
+<div id="outline-container-org44d85bc" class="outline-3">
+<h3 id="org44d85bc"><span class="section-number-3">6.1.</span> BST</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-orgd1d6aab" class="outline-4">
+<h4 id="orgd1d6aab"><span class="section-number-4">6.1.1.</span> Retreiving element</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<p>
+Implementation:
+</p>
+<ol class="org-ol">
+<li>if key == node; done</li>
+<li>if key &lt; node; Go left subtree</li>
+<li>if key &gt; node; Go left subtree</li>
+</ol>
+<ul class="org-ul">
+<li>O(h) efficiency</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9ab6609" class="outline-4">
+<h4 id="org9ab6609"><span class="section-number-4">6.1.2.</span> Retreiving min or max value</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>min: keep following left subtree</li>
+<li>max: keep following right subtree</li>
+<li>O(h) efficiency</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5aa277a" class="outline-4">
+<h4 id="org5aa277a"><span class="section-number-4">6.1.3.</span> Retreiving successor:</h4>
+<div class="outline-text-4" id="text-6-1-3">
+<ul class="org-ul">
+<li>Travel in-order</li>
+<li>O(h) efficiency</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2bbeba5" class="outline-4">
+<h4 id="org2bbeba5"><span class="section-number-4">6.1.4.</span> Adding value</h4>
+<div class="outline-text-4" id="text-6-1-4">
+<p>
+Values are always added as leaves.
+</p>
+<ol class="org-ol">
+<li>if value \(\leq\) key; go left subtree</li>
+<li>if value \(\geq\) key; go right subtree</li>
+<li>No subtree? add as child</li>
+<li>O(h) efficiency</li>
+</ol>
+</div>
+<ol class="org-ol">
+<li><a id="org8b70e9e"></a>Dealing with duplicates<br />
+<div class="outline-text-5" id="text-6-1-4-1">
+<ul class="org-ul">
+<li>always chose same subtree</li>
+<li>store linked list at node with duplicates</li>
+<li>alternate between left and right subtree</li>
+<li>randomly choose between left and right subtree</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgbe4022e" class="outline-4">
+<h4 id="orgbe4022e"><span class="section-number-4">6.1.5.</span> Deleting value</h4>
+<div class="outline-text-4" id="text-6-1-5">
+<ul class="org-ul">
+<li><b>Lazy-deletion</b>: flag item as deleted</li>
+<li>Node without child: remove</li>
+<li>Node with 1 child: child becomes child of node&rsquo;s parent</li>
+<li>Node with 2 children:
+<ol class="org-ol">
+<li>Replace node with in-order successor (smallest node of right subtree)</li>
+<li>a) Copy data</li>
+<li>b) Copy nodes</li>
+</ol></li>
+<li>O(h) efficiency</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga6e46f2" class="outline-4">
+<h4 id="orga6e46f2"><span class="section-number-4">6.1.6.</span> Height of tree</h4>
+<div class="outline-text-4" id="text-6-1-6">
+<ul class="org-ul">
+<li>worst case: h = O(n)</li>
+<li>Average:</li>
+</ul>
+<p>
+TODO
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge706d24" class="outline-3">
+<h3 id="orge706d24"><span class="section-number-3">6.2.</span> Threaded tree</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>Every node has 2 pointers (2n total)</li>
+<li>Only n-1 pointers needed -&gt; 2n - (n-1) = n+1 pointers are not used</li>
+<li>Use empty pointers to point to predecessor and successor</li>
+<li>Store a flag to differentiate between normal pointer and pre/successor</li>
+<li><b>It does not require a stack to traverse the tree -&gt; memory efficient</b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4b3e305" class="outline-3">
+<h3 id="org4b3e305"><span class="section-number-3">6.3.</span> Randomized search tree</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+The problem with BST is that the sequence of the operations (add/remove) dictate how the tree looks. Randomized search tree is a data structure that combines the properties of binary search trees and heap structures, using randomization to maintain balance and efficient operations.
+</p>
+</div>
+<div id="outline-container-org4d4016a" class="outline-4">
+<h4 id="org4d4016a"><span class="section-number-4">6.3.1.</span> Treap (tree + heap)</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<ul class="org-ul">
+<li>Every new node gets a random priority</li>
+<li>Inintialy, the element gets added to the tree as if it was an ordinary BST.</li>
+<li>After adding, it performs a check to validate the heap propirty (max-heap)</li>
+<li>If new node does not comply to the heap property, it gets <b>rotated upwards</b></li>
+<li>Deleting a node works by setting the priority of node to the lowest value, it gets rotated until it becomes a leaf</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Operation</th>
+<th scope="col" class="org-left">BST</th>
+<th scope="col" class="org-left">Treaded tree</th>
+<th scope="col" class="org-left">Randomized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Add</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(lg n)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Remove</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(lg n)</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Find</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(h)</td>
+<td class="org-left">O(lg n)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2479cae" class="outline-3">
+<h3 id="org2479cae"><span class="section-number-3">6.4.</span> Hash table vs Binary tree</h3>
+<div class="outline-text-3" id="text-6-4">
+<ul class="org-ul">
+<li>Hash tables only support the dictionary operations, BSTs also support operations involving the order of keys</li>
+<li>BSTs also support range search (find max,min)</li>
+<li>Efficiency hash tables are O(1) on average while BST operations are O(lg n) on average</li>
+<li>A BST is a dynamical structure, it can grow over time while a hash table is fixed and is expensive to grow.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org77e0c08" class="outline-2">
+<h2 id="org77e0c08"><span class="section-number-2">7.</span> External data structures</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Big datastructures that need to be stored in external memory. Read and write operations, however, will be very slow. Efficient datastructures are thus designed to keep IO operations to a minimum. We can once again split de structures up into to approaches:
+</p>
+<ul class="org-ul">
+<li>Tree structures
+<ul class="org-ul">
+<li>\(B\) -tree</li>
+<li>\(B^+\) -tree</li>
+</ul></li>
+<li>Hashing
+<ul class="org-ul">
+<li>Extendible hashing</li>
+<li>Linear hasing</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org915405c" class="outline-3">
+<h3 id="org915405c"><span class="section-number-3">7.1.</span> \(B\) -trees</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>Extension of binary search tree: an external balanced search tree.</li>
+<li>Very large n: to keep the depth of the tree low, we store a large number ( 50-10 000s) of keys in each node</li>
+<li>The keys are sorted</li>
+<li>Keep the tree balanced: all leaves are on the same level.</li>
+<li>Properties:
+<ul class="org-ul">
+<li>Internal node has at most \(m\) children</li>
+<li>Internal node has at least \(\lceil m/2 \rceil\) children</li>
+<li>Internal node with \(k+1\) children contains \(k\) keys.</li>
+<li>Leaves have at least \(\lceil m/2 \rceil - 1\) keys and at most \(m-1\) keys</li>
+<li>Leaves are on the same level</li>
+<li>Root has at least two children unless he is a leaf</li>
+<li>Each node can store m-1 keys</li>
+</ul></li>
+</ul>
+
+
+<div id="org934a7fa" class="figure">
+<p><img src="./img/b-tree.png" alt="b-tree.png" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Image of B-tree</p>
+</div>
+</div>
+
+<div id="outline-container-org89657b2" class="outline-4">
+<h4 id="org89657b2"><span class="section-number-4">7.1.1.</span> Find</h4>
+<div class="outline-text-4" id="text-7-1-1">
+<ul class="org-ul">
+<li>Same as binary search, but there are more than 2 paths.</li>
+<li>Root node is always in memory, other nodes will get loaded in when needed</li>
+<li>For a given node, we have to search the key in the sorted list of keys: linear search O(m) or binary search O(lg m)</li>
+<li>We continue this until we find the key or end up at an empty slotWe have to load all the nodes along the path in memory: \(O(\log_{\lceil m/2 \rceil}n)\) disk operations. At each node, we have to execute O(m) CPU operations</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf3164ef" class="outline-4">
+<h4 id="orgf3164ef"><span class="section-number-4">7.1.2.</span> Add</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<ul class="org-ul">
+<li>Keys are added to leaf</li>
+<li>Search for the key and add it to the table of the leaf</li>
+<li>If the table of the leaf now contains m elements: split the table in two and move half of the keys to a new node on the same level. Insert an entry in the parent table, potentially moving values to the right.</li>
+<li>If this parent node is full: split it in two and add an entry (middle key) to its parent table.</li>
+<li>Worst case: this has to continue all the way until the root. If the root is full, we split the root and add a new level on top</li>
+<li><b>B-trees grow from the top!!!</b></li>
+<li>Splitting a node requires three disk operations</li>
+<li>Worst case: We have to split all the nodes all the way up to the root: O(h) = \(O(\log_{\lceil m/2 \rceil}n)\)  disk operations</li>
+<li>Splitting a node requires O(m) CPU operations</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1fe812c" class="outline-4">
+<h4 id="org1fe812c"><span class="section-number-4">7.1.3.</span> Remove</h4>
+<div class="outline-text-4" id="text-7-1-3">
+<ul class="org-ul">
+<li>The key is stored in a leaf:
+<ul class="org-ul">
+<li>Remove the key.</li>
+<li>If the number of keys in the leaf becomes too small, merge back with a sibling, move a key from the parent down</li>
+<li>Revert the split operation</li>
+</ul></li>
+<li>The key is stored in an internal node:
+<ul class="org-ul">
+<li>Replace the key with its predecessor (a leaf)</li>
+</ul></li>
+<li>Alternative: Lazy deletion</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee1aa55" class="outline-3">
+<h3 id="orgee1aa55"><span class="section-number-3">7.2.</span> \(B^+\) -tree</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>\(B\) -trees have a few disadvantages:
+<ul class="org-ul">
+<li>Leaves allocate storage for child pointers even though they never have children</li>
+<li>Deleting an internal node is complicated</li>
+<li>Finding the successor and predecessor takes \(O(\log_{\lceil m/2 \rceil}n)\)  disk operations</li>
+</ul></li>
+<li>\(B^+\) -tree
+<ul class="org-ul">
+<li>Internal nodes are only used as an index to guide the search, all data is stored in the leaves</li>
+<li>The leaves form a linked list with increasing key values (<b>sequence set</b>)</li>
+</ul></li>
+
+<li>[+] Because internal nodes only need to contain keys and not values anymore, we can store more keys in them</li>
+<li>[+] Leaves do not contain (null) pointers to child nodes anymore -&gt; They can also contain more keys + values</li>
+<li>[+] We can easily find the successor of a key</li>
+<li>[+] We can easily iterate over all values</li>
+<li class="trans"><code>[-]</code> Internal nodes and leaves have a different structure, more complex to implement</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95ed07b" class="outline-3">
+<h3 id="org95ed07b"><span class="section-number-3">7.3.</span> External hashing</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+What if we just assign a disk page to each element in our hash table ?
+</p>
+<ul class="org-ul">
+<li>[+] Easy to retrieve the page given a key</li>
+<li class="trans"><code>[-]</code> If there are a lot of collisions, we might need to load multiple pages from disk (chaining, open addressing)</li>
+<li class="trans"><code>[-]</code> Lots of storage wasted if a page is almost empty</li>
+</ul>
+</div>
+<div id="outline-container-org749e7db" class="outline-4">
+<h4 id="org749e7db"><span class="section-number-4">7.3.1.</span> Binary trie</h4>
+<div class="outline-text-4" id="text-7-3-1">
+<ul class="org-ul">
+<li>Use the bits of the hash value to descend a binary tree</li>
+<li>The leaves store references to disk pages</li>
+</ul>
+
+
+<div id="orgdb568b0" class="figure">
+<p><img src="./img/binary-trie.png" alt="binary-trie.png" />
+</p>
+<p><span class="figure-number">Figure 7: </span>Image of Binary trie</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org792de03" class="outline-4">
+<h4 id="org792de03"><span class="section-number-4">7.3.2.</span> Extendible hashing</h4>
+<div class="outline-text-4" id="text-7-3-2">
+<ul class="org-ul">
+<li>Instead of storing the trie explicitly, we store it in a table</li>
+<li>The longest path (global depth: d) determines the number of elements in the table (e.g. 3 in the example)</li>
+<li>Not all paths are equally long, each page has a local depth: k</li>
+</ul>
+
+
+<div id="orgc5deeb9" class="figure">
+<p><img src="./img/extendible-hashing.png" alt="extendible-hashing.png" />
+</p>
+<p><span class="figure-number">Figure 8: </span>Image of Extendible Hashing</p>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org216b189"></a>Find<br />
+<div class="outline-text-5" id="text-7-3-2-1">
+<ul class="org-ul">
+<li>Hash the key, find the corresponding page and find the key in the page (linear search or binary search).</li>
+<li>Requires 1 disk operation</li>
+</ul>
+</div>
+</li>
+<li><a id="org8ca0946"></a>Add<br />
+<div class="outline-text-5" id="text-7-3-2-2">
+<ul class="org-ul">
+<li>Find the page and add the key</li>
+<li>If a page is full, we split the page according to the next bit of the hash of the keys</li>
+<li>If a page where k==d is full, we have to double the size of the table</li>
+</ul>
+</div>
+</li>
+<li><a id="orge79255c"></a>Delete<br />
+<div class="outline-text-5" id="text-7-3-2-3">
+<ul class="org-ul">
+<li>Find the page where the key is stored and delete the key.</li>
+<li>We can merge two pages if together they contain less than m keys (the maximum number of keys).</li>
+<li>Avoid repeated merging and splitting</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org263fbff" class="outline-4">
+<h4 id="org263fbff"><span class="section-number-4">7.3.3.</span> Linear hashing</h4>
+<div class="outline-text-4" id="text-7-3-3">
+<ul class="org-ul">
+<li>Use the d last bits of the hash of a key as the address of the page on disk</li>
+<li>Logical address, translated to a physical address by the operating system</li>
+<li>We split pages in sequential order when a page is full</li>
+<li>We do not necessarily split the full page but the next page in the sequence</li>
+<li>We keep track of which page to split next (p)</li>
+<li>We use an overflow page to deal with the additional keys</li>
+</ul>
+
+
+<div id="orgcfd2acd" class="figure">
+<p><img src="./img/linear-hashing.png" alt="linear-hashing.png" />
+</p>
+<p><span class="figure-number">Figure 9: </span>Image of Linear Hashing</p>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgdff40ae"></a>Find<br />
+<div class="outline-text-5" id="text-7-3-3-1">
+<ul class="org-ul">
+<li>Hash the key. E.g. 10101110</li>
+<li>Should we look in page 10 (last two bits) or in page 110 (last three bits)?</li>
+<li>Compare with p: “10” &lt; “11” (binary) -&gt; The page is already split, look in page 110</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgb624195"></a>Delete<br />
+<div class="outline-text-5" id="text-7-3-3-2">
+<ul class="org-ul">
+<li>Inverse of the add operation</li>
+<li>Avoid repeated splitting and merging</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: DUDOS</p>
+<p class="date">Created: 2023-08-22 Tue 21:03</p>
+</div>
+</body>
+</html>
